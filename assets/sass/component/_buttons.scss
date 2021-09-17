@@ -1,0 +1,43 @@
+.button{
+    padding: 0.9rem 1.6rem !important;
+    border-radius: 4px ;
+    text-transform: uppercase;
+    transition: all 0.4s ease !important;
+    outline: none !important;
+    border: none !important;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+    
+}
+.btn--primary{
+    @extend .button;
+    background: $primary-color;
+    color: #fff;
+
+    &:hover{
+        // background: linear-gradient(rgba(0,82,165,0.8),rgba(230,25,55,0.8));
+        // box-shadow: 2px 2px 8px 8px rgba(0,0,0,0.08);
+        border-radius: 2rem;
+        color: #fff;
+       
+    }
+    @include mobile-btn;
+
+}
+
+.btn--secondary{
+    @extend .button;
+    background: $secondary-color;
+    
+    &:hover{
+        // background: linear-gradient(90deg,rgba(230,25,55,0.7),rgba(0,82,165,0.7) 50%,rgba(230,25,55,0.7));
+        // background: linear-gradient(rgba(0,82,165,0.8),rgba(230,25,55,0.8));
+ 
+        color: #fff;
+        border-radius: 2rem;
+    }
+    @include mobile-btn;
+}

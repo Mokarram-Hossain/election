@@ -1,0 +1,91 @@
+// header section
+.header{
+    width: 100%;
+    .navbar-brand{
+        font-size: 2rem;
+        font-weight: 500;
+        color: #fff !important;
+      }
+    .logo{
+        color: $secondary-color;
+        font-size: 2rem;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar{
+        .nav-item{
+            margin-left: .8rem;
+            &:hover .dropdown-menu{
+                display: block;
+                background: $primary-color;
+                padding: 1.5rem 1.5rem;
+            } 
+        .nav-link{
+            color: #fff !important;
+            font-weight: 400;
+            font-size: 0.95rem !important;
+            text-transform: uppercase;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+                color: $secondary-color !important;
+            }
+        }
+        .dropdown-menu{
+            padding: 1rem 1.25rem;
+            transition: all0.4s ease-in-out;
+            width: 40rem;
+            @media (max-width:768px){
+                width: 25rem;
+            }
+            border: none;
+            a{
+                text-decoration: none;
+                color: #fff;
+                padding: 0.6rem 2px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.151);
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 0.875rem;
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+           
+             }
+             .dropdown-menu-shop{
+                padding: 1rem 1.25rem;
+                transition: all0.4s ease-in-out;
+                width: 20rem;
+                display: none;
+                @media (max-width:768px){
+                    width: 20rem;
+                }
+                border: none;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 0.625rem 2px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.151);
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    font-size: 0.875rem;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+               
+                 }
+            
+        }
+        
+    
+
+    }
+    .navbar.sticky{
+        background: $primary-color !important;
+        box-shadow: 0px 10px 8px rgba(230,25,55, 0.09);
+        
+    } 
+    
+}

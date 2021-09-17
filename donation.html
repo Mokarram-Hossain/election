@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  
+
+    <!-- header section start -->
+    <div class="header">
+      <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+              <div class="container">
+                <a class="navbar-brand" href="index.html"> <span class="logo"><i class="las la-hands"></i></span>People</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span ><i class="las la-bars text-white"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto p-0 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="row">
+                          <div class="col-md-4 d-flex flex-column">
+                            <a href="index.html">Home</a>
+                            <a href="product.html">product</a>
+                            <a href="product-details.html">product details</a>
+                            <a href="cart-page.html">cart</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="blog-page.html">blog</a>
+                            <a href="blog-details.html">blog detail</a>
+                            <a href="volunteer.html">Volunteer</a>
+                          </div>
+                          <div class="col-md-4 d-flex flex-column">
+                            <a href="index.html">Home</a>
+                            <a href="product.html">product</a>
+                            <a href="product-details.html">product details</a>
+                            <a href="cart-page.html">cart</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="blog-page.html">blog</a>
+                            <a href="blog-details.html">blog detail</a>
+                            <a href="volunteer.html">Volunteer</a>
+                          </div>
+                          <div class="col-md-4 d-flex flex-column">
+                            <a href="index.html">Home</a>
+                            <a href="product.html">product</a>
+                            <a href="product-details.html">product details</a>
+                            <a href="cart-page.html">cart</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="blog-page.html">blog</a>
+                            <a href="blog-details.html">blog detail</a>
+                            <a href="volunteer.html">Volunteer</a>
+                          </div>
+                        </div>
+                      </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="product.html" tabindex="-1" aria-disabled="true">shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="volunteer.html" tabindex="-1" aria-disabled="true">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="blog-page.html" tabindex="-1" aria-disabled="true">blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="contact.html" tabindex="-1" aria-disabled="true">contact</a>
+                    </li>
+                  </ul>
+                  <div class="buttons">
+                      <ul class="navbar-nav m-0 p-0 ">
+                          <li class="nav-item"><a href="donation.html" class="btn--secondary text-white">Donate Now</a></li>   
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+      </div>
+  </div>
+<!-- header section end -->
+
+<!-- contact banner start -->
+<div class="donation-banner pt-100 pb-60" style="background-image: linear-gradient(130deg,rgba(0,82,165,0.85) 45%,rgba(230,25,55,0.85)), url('../assets/images/dona-bnnr.jpg');">
+    <div class="container">
+      <div class="section-title text-left">
+        <h1 class="text-capitalize text-white mb-3">Donation</h1>
+        <div class="breadcrum-wrapper text-center">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="text-decoration-none text-white" href="#">Home</a></li>
+              <li class="breadcrumb-item"><a class="text-decoration-none text-white" href="#">Donation</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- contact banner end -->
+
+<!-- donation section start -->
+<section class="donation ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 pe-0 me-0">
+                <div class="donation-form box--shadow">
+                    <form action="">
+                        <div class="row">
+                            <h5 class="form-title mb-4 mt-4">Donation Information:</h5>
+                            <div class="col-md-12">
+                                <div class="form-inner">
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" name="no" onclick="moveNumbers()" autocomplete="off" checked="">
+                                        <label class="btn btn-outline-primary ms-0" for="btnradio1">$100</label>
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" name="no" onclick="moveNumbers()" autocomplete="off" checked="">
+                                        <label class="btn btn-outline-primary" for="btnradio2">$200</label>
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" name="no" onclick="moveNumbers()"  autocomplete="off" checked="">
+                                        <label class="btn btn-outline-primary" for="btnradio3">$500</label>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-inner">
+                                    <input type="text" class="form-control" id="result" placeholder="Amount in $">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-inner">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            I would like this donation to automatically repeat each month.
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                            <h5 class="form-title mb-4 mt-4">Donor Information:</h5>
+                            <div class="col-lg-6">
+                                <div class="form-inner">
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-inner">
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-inner">
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-inner">
+                                    <input type="text" class="form-control" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-inner">
+                                    <input type="text" class="form-control" placeholder="Address">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-inner">
+                                    <input type="text" class="form-control" placeholder="Address 2">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-inner">
+                                    <input type="text" class="form-control" placeholder="City">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-inner">
+                                    <input type="text" class="form-control" placeholder="Postal Code">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <div class="form-inner text">
+                                    <button class="btn--secondary " type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 ms-0 ps-0">
+                <div class="donation-right-img rounded-left" style="background-image: linear-gradient(130deg,rgba(0,82,165,0.85) 45%,rgba(230,25,55,0.75)),url(assets/images/donate.jpg); height: 100%; width: 100%;background-size: cover;background-repeat: no-repeat;z-index: 100;">
+                    <h2 class="donation-subtitle text-capitalize text-white">your donation make big help for us. Let us make the country better.</h2>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- donation section end -->
+
+<!-- documentaion section start -->
+<section class="document pb-100">
+    <div class="container">
+      <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1">
+        <div class="col">
+          <h4 class="text-capitalize mb-4">our social work:</h4>
+          <div class="wprt-image-video rounded">
+            <img alt="image" src="assets/images/sw.jpg" class="scale-animate img-fluid  rounded">
+            <a class="icon-wrap colorchange popup-video popup-youtube" href="https://www.youtube.com/watch?v=14semTlwyUY">
+              <i class="las la-play "></i>
+            </a>
+         </div>
+        </div>
+        <div class="col">
+          <h4 class="text-capitalize mb-4">our expense:</h4>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header text-center" id="headingOne">
+                <button class="accordion-button " type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Expense of january
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Expense of February
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Expense of June
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--end col-right-->
+      </div>
+    </div>
+  </section>
+
+<!-- documentaion section end -->
+
+
+
+<!-- footer section start -->
+<section class="footer pt-100">
+    <div class="container">
+      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-1 pb-30">
+        <div class="col">
+          <div class="foooter-item pe-4">
+            <h3 class="footer-title mb-4">About Us</h3>
+            <div class="footer-logo">
+              <p href=""><span class="logo"><i class="las la-hands"></i></span>People</p>
+            </div>
+            <p>Houzez is a premium WordPress theme for real estate where modern aesthetics are combined with tasteful simplicity.</p>
+            <div class="footer-contact mt-1">
+              <p class="text--primary">mokarram254@gmail.com</p>
+              <p>+8801723155254</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-item">
+            <h3 class="footer-title mb-4">Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="property.html">property</a></li>
+              <li><a href="index.html">pages</a></li>
+              <li><a href="blog-page.html">blog</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-item">
+            <h3 class="footer-title mb-4">Learn More</h3>
+            <ul>
+              <li>privacy</li>
+              <li>terms & condition</li>
+              <li>register</li>
+              <li>faq</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-item">
+            <h3 class="footer-title mb-4">Newsletter</h3>
+            <p>For better service subscribe our newsletter & connect with us.</p>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Your Email"> <br>
+              <a href="#" class="btn--secondary text-white">subscribe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="footer-bottom d-flex  justify-content-between pt-4 pb-2 border-top">
+          <div class="social-icons text-left mt-2">
+            <i class="lab la-facebook-f"></i>
+            <i class="lab la-twitter"></i>
+            <i class="lab la-whatsapp"></i>
+            <i class="lab la-instagram"></i>
+          </div>
+          <small class="text-capitalize mt-1">copyright <i class="lar la-copyright"></i>all rights reserved 20201.</small>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- footer section end -->
+      <script src="assets/js/jq.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/slick.js"></script>
+      <script src="assets/js/owl.carousel.js"></script>
+      <script src="assets/js/main.js"></script>
+  
+  </body>
+  </html>
+
+
+
+

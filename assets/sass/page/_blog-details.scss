@@ -1,0 +1,167 @@
+.blog-details{
+    width: 100%;
+    
+    .post-item-details{
+        border-radius: 0.25rem;
+        .post-thumb{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                border-radius: .25rem .25rem 0px 0px;
+            }
+        }
+        .post-content{
+            padding: 1.875rem;
+        }
+        .post-title{
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+        }
+        .post-item-details{
+            p{
+                text-align: justify;
+            }
+        }
+        .post-details-footer{
+            padding-top: 1.25rem;
+            width: 100%;
+            .tags{
+                a{
+                    margin-left: 0.75rem;
+                    text-decoration: none;
+                    color: $primary-color;
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 4px;
+                    font-size: 0.9375rem;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+            }
+            .share-icons{
+                a{
+                    color: $primary-color;
+                    font-size: 1.2rem;
+                    margin-left: 0.75rem;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+        }
+        .meta-item{
+            margin-right: 1.5rem;
+            a{
+                text-decoration: none;
+                color: $primary-color;
+            }
+           
+        }
+    }
+
+    .comment-form-section{
+        border-radius: 0.25rem;
+        padding: 1.875rem;
+        margin-top: 2.5rem;
+        .comment-form-title{
+            padding-bottom: 1.25rem;
+        }
+        form{
+            width: 100%;
+            .form-group{
+                padding-bottom: 1.25rem;
+                .form-control{
+                    border: 1px solid rgb(228, 227, 227);
+                    padding: 0.5rem 0.875rem;
+                    &:focus{
+                        border: 1px solid $secondary-color;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    .comment-section{
+        border-radius: 0.25rem;
+        padding: 1.875rem;
+        margin-top: 2.5rem;
+        .comment-title{
+            color: #888;
+        }
+        .comment-wrapper{
+            padding-left: 0px;
+            li{
+                list-style: none;
+                
+                overflow: hidden;
+                border-bottom: 1px solid rgb(220, 219, 219);
+                // border-top: 1px solid rgb(220, 219, 219);
+                padding: 0.75rem 0px;
+         
+                .comment-reply-wrap{
+                    padding-left: .625rem;
+                    padding: 1.25rem 0px;
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    
+                    li{
+                        background: rgba(0,0,0,0.02);
+                        padding: 1rem 0.25rem 1rem 0.25rem;
+                        margin-left: 1.875rem;
+                        border-radius: 0.25rem;
+                    }
+                    
+                }
+            }
+            .comment-thumb{
+                width: 4.68rem;
+                padding-right: 0.25rem;
+                img{
+                   
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    border-radius: 50% !important;
+                }
+            }
+            .comment-content{
+                width: calc(100%-75px);
+                font-size: 0.9375rem;
+                P{
+                    margin-top: 5px;
+                }
+                span{
+                    color: #999;
+                }
+                .comment-head{
+                    .btn-reply{
+                        background: $primary-color;
+                        padding: 0.25rem 0.625rem;
+                        text-decoration: none;
+                        border-radius: 0.25rem;
+                        color: #fff;
+                        &:hover{
+                            background: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+                .next-prev-post-section{
+                    border-radius: 0.25rem;
+                    padding: 1rem 1.875rem;
+                    margin-top: 2.5rem;
+                    .las{
+                        margin-bottom: 0.25rem;
+                        font-size: 2.2rem;
+                        &:hover{
+                            color: $secondary-color;
+                        }
+                    }
+                }
+
+}
+

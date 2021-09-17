@@ -1,0 +1,151 @@
+.donation-banner{
+    width: 100%;
+    // background-image: linear-gradient(130deg,rgba(0,82,165,0.85) 45%,rgba(230,25,55,0.85)), url('../images/dona-bnnr.jpg');
+    background-position: center;
+    backdrop-filter: blur(10px);
+    background-position: center;
+    background-size: cover;
+    // object-fit: cover;
+    background-repeat: no-repeat;
+    ul{
+        li{
+            list-style: none;
+            color: #fff;
+        }
+    }
+
+}
+.donation{
+    .donation-form{
+        padding: 2rem;
+        border-radius: 5px;
+        position: relative;
+        .form-inner {
+            margin-bottom: 1.8rem;
+
+            .form-control{
+                box-shadow: none;
+                outline: none;
+                padding: 0.625rem 1rem;
+                border: 1px solid #ced4da96;
+
+                &:focus{
+                    border-color: $secondary-color;
+                }
+            }
+            .form-check-input{
+                font-size: 1rem;
+                box-shadow: none;
+                border: 1px solid $secondary-color;
+            }
+            .form-check-input:checked {
+                background-color: #e61937;
+                border-color: #eb1838;
+                box-shadow: none;
+            }
+            // donation radio btns
+            .btn-group>.btn-group:not(:first-child), .btn-group>.btn:not(:first-child) {
+                margin-left: 23px;
+                border-radius: 0.25rem !important;
+                border: 1px solid $primary-color;
+                padding: 0.5rem 0.9rem;
+            }
+            .btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
+                color: #fff;
+                background-color: $secondary-color;
+                border-color: $secondary-color;
+                box-shadow: none;
+                border-radius: 0.25rem !important;
+            }
+        }
+    }
+    .donation-right-img{
+        padding: 1.5rem 4rem;
+        text-align: center;
+        border-radius: 0 0.25rem .25rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .donation-subtitle{
+            font-family: 'Playfair Display', serif;
+            line-height: 1.3;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+// documentaion section
+.document{
+    width: 100%;
+    .wprt-image-video{
+        position: relative;
+        overflow: hidden;
+        .icon-wrap{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3.3rem;
+            background: #fff;
+            padding: .3rem .8rem;
+           color: #fff;
+           background: $secondary-color;
+           height: 3.75rem;
+           line-height: 1;
+           border-radius: 0.5rem;
+           &:hover{
+               background: $primary-color;
+           }
+           
+        }
+        
+        .scale-animate{
+            animation: move 10s infinite;
+        }
+        @keyframes move{
+            0%{transform: scale(1);}
+            50%{transform: scale(1.2);}
+            50%{transform: scale(1.3);}
+            50%{transform: scale(1.2);}
+            100%{transform: scale(1);}
+        }
+    }
+
+    .accordion-item{
+        margin-bottom: 0.625rem;
+    }
+    
+
+    .accordion-button{
+        background: $primary-color;
+        box-shadow: 0 0 8px 8px rgba(0,0,0,0.05);
+        border: none;
+        box-shadow: none !important;
+        color: #fff;
+        &::after{
+            background: transparent;
+            color: #fff;
+            content: "+";
+            font-size: 1rem;
+        }
+        
+        &:hover{
+            background: $secondary-color;
+        }
+        &:not(.collapsed) {
+            color: #0c63e4;
+            background-color: #e61937;
+            color: #fff;
+           &::after{
+               background: transparent;
+               color: #fff;
+               content: "-";
+               font-family: Arial;
+               font-weight: 600;
+               font-size: 1rem;
+           }
+        }
+    }
+        
+    }
